@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.5;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px ;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+   
+  }
+  
+  .sidebar a:hover {
+   background-color:#b7b7b7;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:black;
+  }
+  .sidebar .closebtn:hover{
+    background-color: #b7b7b7;
+  }
+  .openbtn {
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+  
+  .openbtn:hover {
+    background-color: #b7b7b7;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-header p {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    text-align: center !important;
+    font-size: 24px;
+    margin: 15px;
+  }
+.menu{
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+  .grid-one{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    align-items: center;
+  }
+  .grid-two{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+  }
+  .quart{
+ 
+    width: 200px;
+   
+  }
+  .quart img {
+  
+   width: 200px;
+    height: auto;
+  }
+  .quart img:hover{
+    opacity: 0.7;
+  }
+  .quart h1 {
+    font-size: 20px;
+  }
+  .quart p {
+    font-size: 14px;
+  }
+  .pagination{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 15px;
+  }
+  .pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  .pagination a:hover:not(.active) {background-color: #000000;}
+  .about {
+    margin: 20px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+  .about .text1{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+
+  }
+  .about .text1 p {
+      font-size: 24px;
+      font-weight: 300;
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .text2 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+  }
+  .foot {
+    display: flex;
+    justify-content:space-between;
+  
+  }
+  .footer {
+ margin: 10px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .blog {
+    margin: 10px;
+  }
+  .blog ul {
+list-style: none;
+  }
+  .blog ul li:hover{
+    background-color:#c4c4c4;
+  }
+  .blog ul li img {
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+  }
+.blog ul li {
+  
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    margin-bottom: 10px;
+
+}
+
+.tags{
+    margin: 10px;
+}
+.tags .tag-text{
+    background-color: #616161;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    margin: 2px;
+}
+.tags .tag-text:hover{
+    background-color:#000000;
+}
